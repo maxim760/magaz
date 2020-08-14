@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    <title>Quantum</title>
+</head>
+<body >
+
+<svg  style="display: none" >
+    <symbol id="card" viewBox="0 0 450.391 450.391">
+                <g>
+            <path d="M143.673,350.322c-25.969,0-47.02,21.052-47.02,47.02c0,25.969,21.052,47.02,47.02,47.02     c25.969,0,47.02-21.052,47.02-47.02C190.694,371.374,169.642,350.322,143.673,350.322z M143.673,423.465     c-14.427,0-26.122-11.695-26.122-26.122c0-14.427,11.695-26.122,26.122-26.122c14.427,0,26.122,11.695,26.122,26.122     C169.796,411.77,158.1,423.465,143.673,423.465z" />
+            <path d="M342.204,350.322c-25.969,0-47.02,21.052-47.02,47.02c0,25.969,21.052,47.02,47.02,47.02s47.02-21.052,47.02-47.02     C389.224,371.374,368.173,350.322,342.204,350.322z M342.204,423.465c-14.427,0-26.122-11.695-26.122-26.122     c0-14.427,11.695-26.122,26.122-26.122s26.122,11.695,26.122,26.122C368.327,411.77,356.631,423.465,342.204,423.465z" />
+            <path d="M448.261,76.037c-2.176-2.377-5.153-3.865-8.359-4.18L99.788,67.155L90.384,38.42     C83.759,19.211,65.771,6.243,45.453,6.028H10.449C4.678,6.028,0,10.706,0,16.477s4.678,10.449,10.449,10.449h35.004     c11.361,0.251,21.365,7.546,25.078,18.286l66.351,200.098l-5.224,12.016c-5.827,15.026-4.077,31.938,4.702,45.453     c8.695,13.274,23.323,21.466,39.184,21.943h203.233c5.771,0,10.449-4.678,10.449-10.449c0-5.771-4.678-10.449-10.449-10.449     H175.543c-8.957-0.224-17.202-4.936-21.943-12.539c-4.688-7.51-5.651-16.762-2.612-25.078l4.18-9.404l219.951-22.988     c24.16-2.661,44.034-20.233,49.633-43.886l25.078-105.012C450.96,81.893,450.36,78.492,448.261,76.037z M404.376,185.228     c-3.392,15.226-16.319,26.457-31.869,27.69l-217.339,22.465L106.58,88.053l320.261,4.702L404.376,185.228z" />
+        </g>
+    </symbol>
+    <symbol id="user" viewBox="0 0 512 512">
+            <g>
+        <path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148    C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962    c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216    h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40    c59.551,0,108,48.448,108,108S315.551,256,256,256z"/>
+    </g>
+    </symbol>
+    <symbol id="heart" viewBox="0 0 477.534 477.534">
+            <g>
+        <path d="M438.482,58.61c-24.7-26.549-59.311-41.655-95.573-41.711c-36.291,0.042-70.938,15.14-95.676,41.694l-8.431,8.909    l-8.431-8.909C181.284,5.762,98.662,2.728,45.832,51.815c-2.341,2.176-4.602,4.436-6.778,6.778    c-52.072,56.166-52.072,142.968,0,199.134l187.358,197.581c6.482,6.843,17.284,7.136,24.127,0.654    c0.224-0.212,0.442-0.43,0.654-0.654l187.29-197.581C490.551,201.567,490.551,114.77,438.482,58.61z M413.787,234.226h-0.017    L238.802,418.768L63.818,234.226c-39.78-42.916-39.78-109.233,0-152.149c36.125-39.154,97.152-41.609,136.306-5.484    c1.901,1.754,3.73,3.583,5.484,5.484l20.804,21.948c6.856,6.812,17.925,6.812,24.781,0l20.804-21.931    c36.125-39.154,97.152-41.609,136.306-5.484c1.901,1.754,3.73,3.583,5.484,5.484C453.913,125.078,454.207,191.516,413.787,234.226    z" />
+    </g>
+    </symbol>
+    <symbol id="menu" viewBox="0 0 18 12">
+        <path d="M565,1883v2h18v-2H565Zm0,7h18v-2H565v2Zm0,5h18v-2H565v2Z" transform="translate(-565 -1883)"/>
+    </symbol>
+    <symbol id="arrow-left" viewBox="0 0 19.969 20.06">
+          <path d="M628.576,2125.08l1.393-1.51-7.951-7.56h15.964v-1.98H622.018l7.951-7.49-1.56-1.54L618,2115.01l10.576,10.07" transform="translate(-618 -2105)"/>
+    </symbol>
+    <symbol id="arrow-right" viewBox="0 0 19.97 20.06">
+          <path d="M1547.42,2125.08l-1.39-1.51,7.95-7.56h-15.96v-1.98h15.96l-7.95-7.49,1.56-1.54,10.41,10.01-10.58,10.07" transform="translate(-1538.03 -2105)"/>
+    </symbol>
+
+    <symbol id="desctop" viewBox="0 0 22 20">
+          <path d="M570,2704H552v-12h18v12Zm0-14H552a2.006,2.006,0,0,0-2,2v12a2.006,2.006,0,0,0,2,2h7v2h-2v2h8v-2h-2v-2h7a2.005,2.005,0,0,0,2-2v-12A2.005,2.005,0,0,0,570,2690Z" transform="translate(-550 -2690)"/>
+    </symbol>
+    <symbol id="game" viewBox="0 0 22 12">
+          <path d="M568.5,3179a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,568.5,3179Zm-4,3a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,564.5,3182Zm-4.5-2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2Zm10-7H552a2.006,2.006,0,0,0-2,2v8a2.006,2.006,0,0,0,2,2h18a2.005,2.005,0,0,0,2-2v-8A2.005,2.005,0,0,0,570,3173Z" transform="translate(-550 -3173)"/>
+    </symbol>
+    <symbol id="imac" viewBox="0 0 22 20">
+          <path d="M570,2762H552v-10h18v10Zm0-12H552a2.006,2.006,0,0,0-2,2v12a2.006,2.006,0,0,0,2,2h7l-2,3v1h8v-1l-2-3h7a2.005,2.005,0,0,0,2-2v-12A2.005,2.005,0,0,0,570,2750Z" transform="translate(-550 -2750)"/>
+    </symbol>
+
+    <symbol id="keyboard" viewBox="0 0 20 14">
+    <path d="M568,2877h-2v-2h2v2Zm0,3h-2v-2h2v2Zm-3-3h-2v-2h2v2Zm0,3h-2v-2h2v2Zm0,4h-8v-2h8v2Zm-9-7h-2v-2h2v2Zm0,3h-2v-2h2v2Zm1-2h2v2h-2v-2Zm0-3h2v2h-2v-2Zm3,3h2v2h-2v-2Zm0-3h2v2h-2v-2Zm9-3H553a2,2,0,0,0-1.989,2L551,2884a2,2,0,0,0,2,2h16a2.005,2.005,0,0,0,2-2v-10A2.005,2.005,0,0,0,569,2872Z" transform="translate(-551 -2872)"/></symbol>
+
+    <symbol id="laptop" viewBox="0 0 24 16">
+          <path d="M554,2815h16v10H554v-10Zm16,12a2,2,0,0,0,1.989-2l0.01-10a2.005,2.005,0,0,0-2-2H554a2.007,2.007,0,0,0-2,2v10a2.007,2.007,0,0,0,2,2h-4v2h24v-2h-4Z" transform="translate(-550 -2813)"/>
+    </symbol>
+
+    <symbol id="memory" viewBox="0 0 18 18">
+        <path d="M565,2943H555v-10h10v10Zm4-6v-2h-2v-2a2.005,2.005,0,0,0-2-2h-2v-2h-2v2h-2v-2h-2v2h-2a2.007,2.007,0,0,0-2,2v2h-2v2h2v2h-2v2h2v2a2.007,2.007,0,0,0,2,2h2v2h2v-2h2v2h2v-2h2a2.005,2.005,0,0,0,2-2v-2h2v-2h-2v-2h2Zm-8,2h-2v-2h2v2Zm2-4h-6v6h6v-6Z" transform="translate(-551 -2929)"/>
+    </symbol>
+
+    <symbol id="phone" viewBox="0 0 13 22">
+          <path  d="M565,3066h-9v-14h9v14Zm-4.5,4a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,560.5,3070Zm4-21h-8a2.5,2.5,0,0,0-2.5,2.5v17a2.5,2.5,0,0,0,2.5,2.5h8a2.5,2.5,0,0,0,2.5-2.5v-17A2.5,2.5,0,0,0,564.5,3049Z" transform="translate(-554 -3049)"/>
+    </symbol>
+
+    <symbol id="speaker" viewBox="0 0 14 22">
+          <path d="M560,2998a3,3,0,1,0,3,3A3,3,0,0,0,560,2998Zm0,8a5,5,0,1,1,5-5A5,5,0,0,1,560,3006Zm0-16a2,2,0,1,1-2,2A2.006,2.006,0,0,1,560,2990Zm5-2H555a2.007,2.007,0,0,0-2,2v16a2,2,0,0,0,2,1.99l10,0.01a2.005,2.005,0,0,0,2-2v-16A2.005,2.005,0,0,0,565,2988Z" transform="translate(-553 -2988)"/>
+    </symbol>
+
+    <symbol id="tv" viewBox="0 0 22 18">
+          <path  d="M570,3125H552v-12h18v12Zm0-14H552a2.006,2.006,0,0,0-2,2v12a2.006,2.006,0,0,0,2,2h5v2h8v-2h5a2,2,0,0,0,1.989-2l0.01-12A2.005,2.005,0,0,0,570,3111Z" transform="translate(-550 -3111)"/>
+    </symbol>
+
+    <symbol id="watch" viewBox="0 0 16 24">
+          <path d="M555,3238a6,6,0,1,1,6,6A6,6,0,0,1,555,3238Zm14,0a7.974,7.974,0,0,0-3.041-6.27L565,3226h-8l-0.95,5.73a7.968,7.968,0,0,0,0,12.54L557,3250h8l0.959-5.73A7.974,7.974,0,0,0,569,3238Z" transform="translate(-553 -3226)"/>
+    </symbol>
+    <symbol id="arrowNav" viewBox=" 0 0 6 10">
+          <path d="M768,2699l-3-5h-2.875l3.018,5L762,2704h3Z" transform="translate(-762 -2694)"/>
+    </symbol>
+
+    <symbol id="menu2" viewBox="0 0 18 10">
+          <path  d="M990,2792h2v-2h-2v2h0Zm0,4h2v-2h-2v2h0Zm0-8h2v-2h-2v2h0Zm4,4h14v-2H994v2h0Zm0,4h14v-2H994v2h0Zm0-10v2h14v-2H994Z" transform="translate(-990 -2786)"/>
+    </symbol>
+
+    <symbol id="star1" viewBox="0 0 20 19">
+          <path d="M1166,3093.27l6.18,3.73-1.64-7.03,5.46-4.73-7.19-.61L1166,3078l-2.81,6.63-7.19.61,5.46,4.73-1.64,7.03,6.18-3.73h0Z" transform="translate(-1156 -3078)"/>
+    </symbol>
+
+     <symbol id="star0.5" viewBox="0 0 20 19">
+        <path d="M1248,3085.24l-7.19-.62L1238,3078l-2.81,6.63-7.19.61,5.46,4.73-1.64,7.03,6.18-3.73,6.18,3.73-1.63-7.03,5.45-4.73h0Zm-10,6.16v-9.3l1.71,4.04,4.38,0.38-3.32,2.88,1,4.28-3.77-2.28h0Z" transform="translate(-1228 -3078)"/>
+    </symbol>
+
+    <symbol id="star0" viewBox="0 0 20 19">
+          <path  d="M987,3085.24l-7.19-.62L977,3078l-2.81,6.63-7.191.61,5.461,4.73-1.641,7.03,6.181-3.73,6.18,3.73-1.631-7.03,5.452-4.73h0Zm-10,6.16-3.759,2.27,1-4.28-3.32-2.88,4.381-.38,1.7-4.03,1.709,4.04,4.38,0.38-3.319,2.88,1,4.28L977,3091.4h0Z" transform="translate(-967 -3078)"/>
+    </symbol>
+
+    <symbol id="cart2" viewBox="0 0 20 20">
+          <path  d="M974,3141a2,2,0,1,0,2,2,2,2,0,0,0-2-2h0Zm-6-16v2h2l3.6,7.59-1.351,2.45a1.933,1.933,0,0,0-.249.96,2.006,2.006,0,0,0,2,2h12v-2H974.42a0.247,0.247,0,0,1-.25-0.25l0.029-.12,0.9-1.63h7.45a1.987,1.987,0,0,0,1.75-1.03l3.579-6.49A0.966,0.966,0,0,0,988,3128a1,1,0,0,0-1-1H972.209l-0.939-2H968Zm16,16a2,2,0,1,0,2,2,2,2,0,0,0-2-2h0Z" transform="translate(-968 -3125)"/>
+    </symbol>
+
+    <symbol id="facebook" viewBox="0 0 8 15">
+          <path d="M1405.19,3723.99v-6.83h2.35l0.36-2.67h-2.71v-1.7a1.12,1.12,0,0,1,1.35-1.3h1.45v-2.38a20.061,20.061,0,0,0-2.11-.11,3.26,3.26,0,0,0-3.52,3.53v1.96H1400v2.67h2.36v6.83h2.83Z" transform="translate(-1400 -3709)"/>
+    </symbol>
+    <symbol id="twitter" viewBox="0 0 14 11.75">
+          <path d="M1462,3711.53a5.57,5.57,0,0,1-1.65.47,3.017,3.017,0,0,0,1.27-1.64,5.779,5.779,0,0,1-1.83.72,2.821,2.821,0,0,0-2.1-.94,2.872,2.872,0,0,0-2.04.88,2.957,2.957,0,0,0-.83,2.09,3.078,3.078,0,0,0,.07.68,8.1,8.1,0,0,1-5.92-3.1,3.037,3.037,0,0,0,.89,3.96,2.864,2.864,0,0,1-1.3-.37v0.04a2.95,2.95,0,0,0,2.31,2.91,3.007,3.007,0,0,1-1.3.05,2.9,2.9,0,0,0,2.68,2.06,5.659,5.659,0,0,1-3.56,1.27,0.914,0.914,0,0,1-.69-0.04,7.951,7.951,0,0,0,4.4,1.33,8.089,8.089,0,0,0,5.82-2.48,8.414,8.414,0,0,0,2.35-5.96c0-.13,0-0.26-0.01-0.39A5.711,5.711,0,0,0,1462,3711.53Z" transform="translate(-1448 -3710.16)"/>
+    </symbol>
+    <symbol id="instagram" viewBox="0 0 16 16">
+
+  <path d="M1505.01,3710h-6.08a2.675,2.675,0,0,0-2.93,2.93v6.08a3.083,3.083,0,0,0,.83,2.22,3.137,3.137,0,0,0,2.15.77h6.03a3.057,3.057,0,0,0,2.16-.77,2.862,2.862,0,0,0,.83-2.16v-6.08a3.145,3.145,0,0,0-.77-2.16A3,3,0,0,0,1505.01,3710Zm4.99,9.31a4.762,4.762,0,0,1-1.33,3.43,4.7,4.7,0,0,1-3.38,1.26h-6.58a4.7,4.7,0,0,1-3.38-1.26,4.528,4.528,0,0,1-1.33-3.43v-6.62a4.456,4.456,0,0,1,4.71-4.69h6.64a4.644,4.644,0,0,1,3.38,1.32,4.579,4.579,0,0,1,1.27,3.37v6.62Zm-8-1.31a2,2,0,1,0-2-2A2,2,0,0,0,1502,3718Zm-0.03,2a4,4,0,0,1,0-8A4,4,0,1,1,1501.97,3720Zm4.03-7a1,1,0,1,1,1-1A0.99,0.99,0,0,1,1506,3713Z" transform="translate(-1494 -3708)"/>
+    </symbol>
+    <symbol id="youtube" viewBox="0 0 16 12">
+          <path d="M1556,3716l-6-3.27v6.53Zm4,4a2.006,2.006,0,0,1-2,2h-12a2.006,2.006,0,0,1-2-2v-8a2.006,2.006,0,0,1,2-2h12a2.006,2.006,0,0,1,2,2v8Z" transform="translate(-1544 -3710)"/>
+    </symbol>
+    <symbol id="arrowDown" viewBox="0 0 8 5">
+          <path style="fill:'#b2b2b2'" d="M1117,1798l4-2.5v-2.4l-4,2.52-4-2.62v2.5Z" transform="translate(-1113 -1793)"/>
+    </symbol>
+    <symbol id="settings" viewBox="0 0 512 512">
+        <g>
+    <g>
+        <path d="M512,298.333v-84.667l-69.42-13.675c-3.783-12.585-8.833-24.739-15.083-36.309l38.724-58.087L406.404,45.78
+            l-58.086,38.724c-11.569-6.251-23.725-11.3-36.31-15.083L298.333,0h-84.666l-13.676,69.42
+            c-12.584,3.783-24.739,8.832-36.31,15.083L105.596,45.78L45.78,105.596l38.724,58.087c-6.25,11.57-11.3,23.724-15.083,36.309
+            L0,213.667v84.667l69.42,13.676c3.783,12.584,8.833,24.739,15.083,36.309l-38.724,58.087l59.816,59.816l58.086-38.724
+            c11.57,6.251,23.726,11.3,36.31,15.083L213.667,512h84.666l13.676-69.42c12.585-3.783,24.739-8.832,36.31-15.083l58.086,38.724
+            l59.816-59.816l-38.724-58.087c6.25-11.57,11.3-23.724,15.083-36.309L512,298.333z M427.617,402.582l-25.035,25.035
+            l-53.278-35.519c-27.034,16.387-35.993,19.506-63.088,26.2L273.667,482h-35.334l-12.549-63.702
+            c-30.833-7.617-39.367-11.822-63.088-26.2l-53.278,35.519l-25.035-25.035l35.519-53.278c-16.499-27.218-19.557-36.212-26.2-63.088
+            L30,273.667v-35.333l63.701-12.549c6.552-26.51,9.554-35.628,26.2-63.088l-35.519-53.278l25.035-25.035l53.278,35.518
+            c27.256-16.52,36.263-19.572,63.088-26.2L238.333,30h35.334l12.549,63.702c30.893,7.633,39.418,11.852,63.088,26.2l53.278-35.518
+            l25.035,25.035l-35.519,53.278c16.354,26.979,19.49,35.938,26.2,63.088L482,238.333v35.333l-63.701,12.549
+            c-7.636,30.894-11.833,39.386-26.2,63.088L427.617,402.582z"/>
+    </g>
+</g>
+<g>
+    <g>
+        <path d="M256,151c-57.897,0-105,47.103-105,105c0,57.897,47.103,105,105,105c57.897,0,105-47.103,105-105
+            C361,198.103,313.897,151,256,151z M256,331c-41.355,0-75-33.645-75-75c0-41.355,33.645-75,75-75s75,33.645,75,75
+            S297.355,331,256,331z"/>
+    </g>
+</g>
+    </symbol>
+    <symbol id="top" viewBox="0 0 261.808 261.808">
+         <path d="M260.485,160.384L135.686,19.409c-2.42-2.73-6.331-2.736-8.757-0.011L1.33,160.389
+        c-2.426,2.73-1.441,4.928,2.203,4.928h79.144v72.546c0,3.644,2.953,6.587,6.592,6.587h83.267c3.639,0,6.592-2.948,6.592-6.587
+        v-72.546h79.138C261.91,165.317,262.906,163.114,260.485,160.384z"/>
+    </symbol>
+</svg>
+
+
+
+<div class="page">
+<div class="header" id="header">
+    <div class="header__top" id="header__top">
+        <div class="container">
+            <div class="header__inner">
+                <button class="icon__button" type="button" id="header__arrowtop">
+                    <svg class="icon__top">
+                        <use xlink:href="#top"></use>
+                    </svg>
+                </button>
+                <button class="header__logo" type="button" id="header__logo">
+                QUANTUM
+            </button>
+
+                <form class="header__search">
+                    <div class="header__search-item header__search-item--input">
+                    <input class="header__search-input" type="text" placeholder="Search goods">
+                </div>
+
+                    <div class="header__search-item" id="header__search-item" data-drop="#header__select-dropdown">
+                    <div class="header__select">
+                        <div class="header__select-title" data-select-title>CATEGORY</div>
+                        <div class="header__select-dropdown" id="header__select-dropdown" data-select-item-wrapper>
+                            <div class="header__select-dropdown__item" data-select-item="Mobile">Mobile</div>
+                            <div class="header__select-dropdown__item" data-select-item="Tablet">Tablet</div>
+                            <div class="header__select-dropdown__item" data-select-item="Laptop">Laptop</div>
+                        </div>
+                    </div>
+
+                    <select class="hidden" name="" id="selectReal">
+                        <option value="none">category</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="Tablet">Tablet</option>
+                        <option value="Laptop">Laptop</option>
+                    </select>
+
+                </div>
+
+                    <div class="header__search-item">
+                    <button class="header__search-btn" type="submit"><img class="header__search-img" src="assets/img/magnifying-glass.svg" alt=""></button>
+                    </div>
+
+                </form>
+
+                <div class="header__btns" id="burgerOpen">
+
+                <a href="#" target="_blank" class="header__btn header__btn--notify">
+                    <div class="header__wrapper"><svg class="header__icon-wrapper">
+                            <use xlink:href="#card" class="header__icon"></use>
+                        </svg>
+                    </div>
+                    <div class="header__caption">0 items</div>
+                </a>
+
+                <a href="#" target="_blank" class="header__btn">
+                    <div class="header__wrapper"><svg class="header__icon-wrapper">
+                            <use xlink:href="#heart" class="header__icon"></use>
+                        </svg>
+                    </div>
+                    <div class="header__caption">Wishlist</div>
+                </a>
+
+                <a href="#" target="_blank" class="header__btn">
+                    <div class="header__wrapper"><svg class="header__icon-wrapper">
+                            <use xlink:href="#user" class="header__icon"></use>
+                        </svg>
+                    </div>
+                    <div class="header__caption">Sign in</div>
+                </a>
+            </div>
+                <button class="burger" id="burger">
+                    <span class="burger__line burger__line--top"></span>
+                    <span class="burger__line burger__line--center first"></span>
+                    <span class="burger__line burger__line--center last"></span>
+                    <span class="burger__line burger__line--bottom"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="header__bottom">
+        <div class="container">
+            <div class="header-nav">
+                <a class="header-nav__categ" href="#">
+                    <svg class="header-nav__menu">
+                        <use xlink:href="#menu"></use>
+                    </svg>
+                    <p class="header-nav__title">All Categories</p>
+                </a>
+                <div class="header-nav__deals">
+                    <a class="header-nav__pluses" href="#">Super Deals</a>
+                    <a class="header-nav__pluses" href="#">Featured Brands</a>
+                    <a class="header-nav__pluses" href="#">Collections</a>
+                    <a class="header-nav__pluses" href="#">Bestselling</a>
+                </div>
+                <div class="header-nav__settings" id="header__settings">
+                    <svg class="header-nav__setimg">
+                        <use xlink:href="#settings"></use>
+                    </svg>
+                    <p class="header-nav__set-text">Settings</p>
+                </div>
+                <div class="header-nav__drop" id="params">
+                    <div>
+                        <button class="header-nav__dropitem header-nav__dropitem--hover" type="button" id="header__help">
+                            <div class="header-nav__main">Help</div>
+                            <div class="header-nav__choose" id="header__dopitems">
+                                <a class="header-nav__var" href="#">Support</a>
+                                <a class="header-nav__var" href="#">Contacts</a>
+                                <a class="header-nav__var" href="#">FAQ</a>
+                            </div>
+                        </button>
+
+                        <select class="hidden" name="help">
+                            <option value="Support">Support</option>
+                            <option value="Contacts">Contacts</option>
+                        </select>
+
+                    </div>
+                    <div>
+                        <button class="header-nav__dropitem" type="button" data-drop>
+                            <div class="header-nav__main" data-select-title>USD</div>
+                            <div class="header-nav__choose" data-select-item-wrapper>
+                                <a class="header-nav__var" data-select-item="Euro" href="#">Euro</a>
+                                <a class="header-nav__var" data-select-item="Dollars" href="#">Dollars</a>
+                                <a class="header-nav__var" data-select-item="USD" href="#">USD</a>
+                            </div>
+                        </button>
+                        <select class="hidden" name="money" >
+                            <option value="USD">USD</option>
+                            <option value="Dollars">Dollars</option>
+                            <option value="Euro">Euro</option>
+                        </select>
+                    </div>
+
+
+                    <div>
+                        <button class="header-nav__dropitem" type="button" data-drop>
+                            <div class="header-nav__main" data-select-title>Language</div>
+                            <div class="header-nav__choose" data-select-item-wrapper>
+                                <a class="header-nav__var" data-select-item="English" href="#">English</a>
+                                <a class="header-nav__var" data-select-item="Russian" href="#">Russian</a>
+                                <a class="header-nav__var" data-select-item="Spanish" href="#">Spanish</a>
+                            </div>
+
+                        </button>
+                        <select class="hidden" name="lang" >
+                            <option value="English">English</option>
+                            <option value="Russian">Russian</option>
+                            <option value="Spanish">Spanish</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="slider">
+    <div class="container">
+          <div class="slider__out">
+            <button class="slider__arrow slider__arrow--left" id="arrow-leftSlider" type="button">
+                <svg class="slider__arrow-img">
+                    <use xlink:href="#arrow-left"></use>
+                </svg>
+            </button>
+            <button class="slider__arrow slider__arrow--right" id="arrow-rightSlider" type="button">
+                <svg class="slider__arrow-img">
+                    <use xlink:href="#arrow-right"></use>
+                </svg>
+            </button>
+
+            <div class="slider__wrapper" id="slider__wrapper">
+
+                <div class="slider__item">
+                    <div class="slider__photo">
+                        <div class="slider__img-wrapper">
+                            <img class="slider__img" src="assets/img/slide1.jpg" alt="">
+                        </div>
+                        <div class="slider__write">
+                            <div class="slider__title">The Universe Through A Child S Eyes</div>
+                            <div class="slider__message">Start sales</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+                    <div class="slider__photo">
+                        <img class="slider__img" src="assets/img/slide1.jpg" alt="">
+                        <div class="slider__write">
+                            <div class="slider__title">The Universe Through A Child S Eyes 2</div>
+                            <div class="slider__message">Middle sales</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+                    <div class="slider__photo">
+                        <img class="slider__img" src="assets/img/slide1.jpg" alt="">
+                        <div class="slider__write">
+                            <div class="slider__title">The Universe Through A Child S Eyes 3</div>
+                            <div class="slider__message">End sales</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="galery" id="galery">
+    <div class="container">
+        <div class="galery__inner">
+            <a class="galery__headph" href="#">
+                <h1 class="galery__title">Astronomy Or Astrology</h1>
+                <p class="galery__subtitle">Start sales</p>
+                <div class="galery__img-wrapper">
+                    <img class="galery__img" src="assets/img/galery/headphones.jpg" alt="headphones">
+                </div>
+            </a>
+            <a class="galery__center" href="#">
+                <h1 class="galery__title galery__title--rowswhite">
+                    The Basics Of Buying<br>A Telescope
+                </h1>
+                <div class="galery__subtitle">
+                    Astronomy Or Astrology
+                </div>
+            </a>
+            <a class="galery__pen" href="#">
+                <div class="galery__img-wrapper">
+                    <img class="galery__img" src="assets/img/galery/pen_03.jpg" alt="">
+                </div>
+                <p class="galery__text">Getting Free Publicity
+For Your Business</p>
+            </a>
+            <a class="galery__time" href="#">
+
+                <div class="galery__img-wrapper">
+                    <img class="galery__img" src="assets/img/galery/time.jpg" alt="">
+                </div>
+                <p class="galery__text">How Plasma Tvs And
+Lcd Tvs Differ</p>
+
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<main class="main" id="main">
+    <div class="container">
+
+        <div class="main__inner">
+
+            <div class="main__col main__col--left main__menu">
+
+                <div class="navigation">
+
+                    <ul class="navigation__list">
+
+                        <li class="navigation__li">
+                            <div class="navigation__item navigation__item--in">
+                                <div class="navigation__item-name">
+                                    <svg class="navigation__item-icon">
+                                        <use xlink:href="#desctop"></use>
+                                    </svg>
+                                <p class="navigation__item-title">Computers</p>
+                                </div>
+                                <div class="navigation__item-arrow">
+                                    <svg class="navigation__arrowright" src="assets/img/arrow.svg" alt="">
+                                        <use xlink:href="#arrowNav"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <ul class="navigation__inner" >
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#desctop"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">LG</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#desctop"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Samsung</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#desctop"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Fly</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <li class="navigation__li">
+                            <div class="navigation__item navigation__item--in">
+                                <div class="navigation__item-name">
+                                    <svg class="navigation__item-icon">
+                                        <use xlink:href="#imac"></use>
+                                    </svg>
+                                <p class="navigation__item-title">Apple Computers</p>
+                                </div>
+                                <div class="navigation__item-arrow">
+                                    <svg class="navigation__arrowright" src="assets/img/arrow.svg" alt="">
+                                        <use xlink:href="#arrowNav"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <ul class="navigation__inner" >
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#imac"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">iMac</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#imac"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">MacBook</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#imac"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">MacBook Pro</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                            </ul>
+
+
+                        </li>
+
+                        <li class="navigation__li">
+                            <div class="navigation__item navigation__item--in" >
+                                <div class="navigation__item-name">
+                                    <svg class="navigation__item-icon">
+                                        <use xlink:href="#laptop"></use>
+                                    </svg>
+                                <p class="navigation__item-title">Laptop</p>
+                                </div>
+                                <div class="navigation__item-arrow">
+                                    <svg class="navigation__arrowright" src="assets/img/arrow.svg" alt="">
+                                        <use xlink:href="#arrowNav"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                           <ul class="navigation__inner" >
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#laptop"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Lenovo</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#laptop"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Samsung</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#laptop"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Asus</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#laptop"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Acer</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                            </ul>
+
+
+                        </li>
+
+                        <li class="navigation__li">
+                            <div class="navigation__item navigation__item--in">
+                                <div class="navigation__item-name">
+                                    <svg class="navigation__item-icon">
+                                        <use xlink:href="#keyboard"></use>
+                                    </svg>
+                                <p class="navigation__item-title">Friends</p>
+                                </div>
+                                <div class="navigation__item-arrow">
+                                    <svg class="navigation__arrowright" src="assets/img/arrow.svg" alt="">
+                                        <use xlink:href="#arrowNav"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <ul class="navigation__inner" >
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#keyboard"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Logitech</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#keyboard"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Razer</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#keyboard"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Microsoft</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#keyboard"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Genius</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <li class="navigation__li">
+                            <div class="navigation__item navigation__item--in">
+                                <div class="navigation__item-name">
+                                    <svg class="navigation__item-icon">
+                                        <use xlink:href="#memory"></use>
+                                    </svg>
+                                <p class="navigation__item-title">Computer Components</p>
+                                </div>
+                                <div class="navigation__item-arrow">
+                                    <svg class="navigation__arrowright" src="assets/img/arrow.svg" alt="">
+                                        <use xlink:href="#arrowNav"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <ul class="navigation__inner" >
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#memory"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Keyboard</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#memory"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Mouse</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#memory"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Monitor</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#memory"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">CPU</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <li class="navigation__li">
+                            <div class="navigation__item navigation__item--in">
+                                <div class="navigation__item-name">
+                                    <svg class="navigation__item-icon">
+                                        <use xlink:href="#speaker"></use>
+                                    </svg>
+                                <p class="navigation__item-title">Accessories</p>
+                                </div>
+                                <div class="navigation__item-arrow">
+                                    <svg class="navigation__arrowright" src="assets/img/arrow.svg" alt="">
+                                        <use xlink:href="#arrowNav"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <ul class="navigation__inner" >
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#speaker"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">JBL</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#speaker"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Genius</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <li class="navigation__li">
+                            <div class="navigation__item navigation__item--in">
+                                <div class="navigation__item-name">
+                                    <svg class="navigation__item-icon">
+                                        <use xlink:href="#phone"></use>
+                                    </svg>
+                                <p class="navigation__item-title">Sell Phones</p>
+                                </div>
+                                <div class="navigation__item-arrow">
+                                    <svg class="navigation__arrowright" src="assets/img/arrow.svg" alt="">
+                                        <use xlink:href="#arrowNav"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <ul class="navigation__inner" >
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#phone"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">iPhone</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#phone"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Samsung</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#phone"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Xiaomi</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#phone"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Nokia</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#phone"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Huawei</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <li class="navigation__li">
+                            <div class="navigation__item navigation__item--in">
+                                <div class="navigation__item-name">
+                                    <svg class="navigation__item-icon">
+                                        <use xlink:href="#tv"></use>
+                                    </svg>
+                                <p class="navigation__item-title">TV &amp; Video</p>
+                                </div>
+                                <div class="navigation__item-arrow">
+                                    <svg class="navigation__arrowright" src="assets/img/arrow.svg" alt="">
+                                        <use xlink:href="#arrowNav"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <ul class="navigation__inner" >
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#tv"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Sony</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#tv"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Toshiba</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#tv"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Samsung</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                            </ul>
+
+
+                        </li>
+
+                        <li class="navigation__li">
+                            <div class="navigation__item">
+                                <div class="navigation__item-name">
+                                    <svg class="navigation__item-icon">
+                                        <use xlink:href="#game"></use>
+                                    </svg>
+                                <p class="navigation__item-title">Game Consoles</p>
+                                </div>
+                                <div class="navigation__item-arrow">
+                                    <svg class="navigation__arrowright" src="assets/img/arrow.svg" alt="">
+                                        <use xlink:href="#arrowNav"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <ul class="navigation__inner" >
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#game"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Nintendo</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#game"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Sony</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#game"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Xbox</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                            </ul>
+
+
+                        </li>
+
+                        <li class="navigation__li">
+                            <div class="navigation__item navigation__item--in">
+                                <div class="navigation__item-name">
+                                    <svg class="navigation__item-icon">
+                                        <use xlink:href="#watch"></use>
+                                    </svg>
+                                <p class="navigation__item-title">Watches</p>
+                                </div>
+                                <div class="navigation__item-arrow">
+                                    <svg class="navigation__arrowright" src="assets/img/arrow.svg" alt="">
+                                        <use xlink:href="#arrowNav"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <ul class="navigation__inner" >
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#watch"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Samsung</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#watch"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Huawei</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="navigation__item">
+                                        <div class="navigation__item-name navigation__item-name--inner">
+                                            <svg class="navigation__item-icon">
+                                                <use xlink:href="#watch"></use>
+                                            </svg>
+                                            <p class="navigation__item-title navigation__item-title--right">Apple</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+
+                    </ul>
+
+                </div>  <!-- /.navigation-->
+
+                <aside class="info">
+                    <a class="info__inner" href="#" target="_blank">
+                        <h1 class="info__title">Look Up In The Sky</h1>
+                        <p class="info__text">Astronomy Or Astrology</p>
+                    </a>
+                </aside>
+
+            </div>  <!-- /.main__menu-->
+
+            <div class="main__col main__content">
+
+                <div class="tab" id="tab">
+                    <button class="tab__btn active" data-sort="popular">Most Popular</button>
+                    <button class="tab__btn" data-sort="commut">My communities</button>
+                </div>
+
+                <div class="card" id="card">
+                        <div class="card__all" id="card__all">
+
+
+                            <div class="card__elem-wrapper active" data-popular>
+
+                                <div class="card__elem">
+
+                                    <div class="card__header">
+                                        <p class="card__sale">Sale 10%</p>
+                                        <div class="card__icons">
+                                            <button class="card__btn" type="button">
+                                               <svg class="card__icon-header">
+                                                    <use xlink:href="#menu2"></use>
+                                                </svg>
+                                            </button>
+                                            <button class="card__btn in-favourite" type="button">
+                                                <svg class="card__icon-header">
+                                                    <use xlink:href="#heart"></use>
+                                                </svg>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                    <a class="card__sell" href="#" target="_blank">
+                                        <img class="card__photo" src="assets/img/list/1.png">
+                                        <h3 class="card__text">Asus ZenFone Go ZB452KG (black and white)</h3>
+                                    </a>
+                                    <div class="card__rate">
+                                        <div class="card__stars">
+                                            <svg class="card__star">
+                                                <use xlink:href="#star1"></use>
+                                            </svg>
+                                            <svg class="card__star">
+                                                <use xlink:href="#star1"></use>
+                                            </svg>
+                                            <svg class="card__star">
+                                                <use xlink:href="#star1"></use>
+                                            </svg>
+                                            <svg class="card__star">
+                                                <use xlink:href="#star0.5"></use>
+                                            </svg>
+                                            <svg class="card__star card__star--none">
+                                                <use xlink:href="#star0"></use>
+                                            </svg>
+                                        </div>
+                                        <p class="card__pos">12</p>
+                                    </div>
+                                    <div class="card__footer">
+                                        <p class="card__price">$ 384.4</p>
+                                        <button class="card__btn" type="button">
+                                            <svg class="card__icon-footer">
+                                                <use xlink:href="#cart2"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </div> <!-- /.card-elem-->
+                            </div> <!-- //card-elem-wrapper-->
+
+                            <div class="card__elem-wrapper active" data-popular>
+
+                                <div class="card__elem">
+
+                                    <div class="card__header">
+                                        <p class="card__sale">Sale 10%</p>
+                                        <div class="card__icons">
+                                            <button class="card__btn" type="button">
+                                               <svg class="card__icon-header">
+                                                    <use xlink:href="#menu2"></use>
+                                                </svg>
+                                            </button>
+                                            <button class="card__btn in-favourite" type="button">
+                                                <svg class="card__icon-header">
+                                                    <use xlink:href="#heart"></use>
+                                                </svg>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                    <a class="card__sell" href="#" target="_blank">
+                                        <img class="card__photo" src="assets/img/list/2.png">
+                                        <h3 class="card__text">Asus ZenFone Go ZB452KG (black and white)</h3>
+                                    </a>
+                                    <div class="card__rate">
+                                        <div class="card__stars">
+                                            <svg class="card__star">
+                                                <use xlink:href="#star1"></use>
+                                            </svg>
+                                            <svg class="card__star">
+                                                <use xlink:href="#star1"></use>
+                                            </svg>
+                                            <svg class="card__star">
+                                                <use xlink:href="#star1"></use>
+                                            </svg>
+                                            <svg class="card__star">
+                                                <use xlink:href="#star0.5"></use>
+                                            </svg>
+                                            <svg class="card__star card__star--none">
+                                                <use xlink:href="#star0"></use>
+                                            </svg>
+                                        </div>
+                                        <p class="card__pos">12</p>
+                                    </div>
+                                    <div class="card__footer">
+                                        <p class="card__price">$ 384.4</p>
+                                        <button class="card__btn" type="button">
+                                            <svg class="card__icon-footer">
+                                                <use xlink:href="#cart2"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </div> <!-- /.card-elem-->
+                            </div> <!-- //card-elem-wrapper-->
+
+                            <div class="card__elem-wrapper active" data-popular>
+
+                                <div class="card__elem">
+
+                                    <div class="card__header">
+                                        <p class="card__sale">Sale 10%</p>
+                                        <div class="card__icons">
+                                            <button class="card__btn" type="button">
+                                               <svg class="card__icon-header">
+                                                    <use xlink:href="#menu2"></use>
+                                                </svg>
+                                            </button>
+                                            <button class="card__btn in-favourite" type="button">
+                                                <svg class="card__icon-header">
+                                                    <use xlink:href="#heart"></use>
+                                                </svg>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                    <a class="card__sell" href="#" target="_blank">
+                                        <img class="card__photo" src="assets/img/list/3.png">
+                                        <h3 class="card__text">Asus ZenFone Go ZB452KG (black and white)</h3>
+                                    </a>
+                                    <div class="card__rate">
+                                        <div class="card__stars">
+                                            <svg class="card__star">
+                                                <use xlink:href="#star1"></use>
+                                            </svg>
+                                            <svg class="card__star">
+                                                <use xlink:href="#star1"></use>
+                                            </svg>
+                                            <svg class="card__star">
+                                                <use xlink:href="#star1"></use>
+                                            </svg>
+                                            <svg class="card__star">
+                                                <use xlink:href="#star0.5"></use>
+                                            </svg>
+                                            <svg class="card__star card__star--none">
+                                                <use xlink:href="#star0"></use>
+                                            </svg>
+                                        </div>
+                                        <p class="card__pos">12</p>
+                                    </div>
+                                    <div class="card__footer">
+                                        <p class="card__price">$ 384.4</p>
+                                        <button class="card__btn" type="button">
+                                            <svg class="card__icon-footer">
+                                                <use xlink:href="#cart2"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </div> <!-- /.card-elem-->
+                            </div> <!-- //card-elem-wrapper-->
+
+                            <div class="card__elem-wrapper active" data-popular>
+
+                                <div class="card__elem">
+
+                                    <div class="card__header">
+                                        <p class="card__sale">Sale 10%</p>
+                                        <div class="card__icons">
+                                            <button class="card__btn" type="button">
+                                               <svg class="card__icon-header">
+                                                    <use xlink:href="#menu2"></use>
+                                                </svg>
+                                            </button>
+                                            <button class="card__btn in-favourite" type="button">
+                                                <svg class="card__icon-header">
+                                                    <use xlink:href="#heart"></use>
+                                                </svg>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                    <a class="card__sell" href="#" target="_blank">
+                                        <img class="card__photo" src="assets/img/list/4.png">
+                                        <h3 class="card__text">Asus ZenFone Go ZB452KG (black and white)</h3>
+                                    </a>
+                                    <div class="card__rate">
+                                        <div class="card__stars">
+                                            <svg class="card__star">
+                                                <use xlink:href="#star1"></use>
+                                            </svg>
+                                            <svg class="card__star">
+                                                <use xlink:href="#star1"></use>
+                                            </svg>
+                                            <svg class="card__star">
+                                                <use xlink:href="#star1"></use>
+                                            </svg>
+                                            <svg class="card__star">
+                                                <use xlink:href="#star0.5"></use>
+                                            </svg>
+                                            <svg class="card__star card__star--none">
+                                                <use xlink:href="#star0"></use>
+                                            </svg>
+                                        </div>
+                                        <p class="card__pos">12</p>
+                                    </div>
+                                    <div class="card__footer">
+                                        <p class="card__price">$ 384.4</p>
+                                        <button class="card__btn" type="button">
+                                            <svg class="card__icon-footer">
+                                                <use xlink:href="#cart2"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </div> <!-- /.card-elem-->
+                            </div> <!-- //card-elem-wrapper-->
+
+                            <div class="card__elem-wrapper active" data-popular>
+
+                                <div class="card__elem">
+
+                                    <div class="card__header">
+                                        <p class="card__sale">Sale 10%</p>
+                                        <div class="card__icons">
+                                            <button class="card__btn" type="button">
+                                               <svg class="card__icon-header">
+                                                    <use xlink:href="#menu2"></use>
+                                                </svg>
+                                            </button>
+                                            <button class="card__btn in-favourite" type="button">
+                                                <svg class="card__icon-header">
+                                                    <use xlink:href="#heart"></use>
+                                                </svg>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                    <a class="card__sell" href="#" target="_blank">
+                                        <img class="card__photo" src="assets/img/list/5.png">
+                                        <h3 class="card__text">Asus ZenFone Go ZB452KG (black and white)</h3>
+                                    </a>
+                                    <div class="card__rate">
+                                        <div class="card__stars">
+                                            <svg class="card__star">
+                                                <use xlink:href="#star1"></use>
+                                            </svg>
+                                            <svg class="card__star">
+                                                <use xlink:href="#star1"></use>
+                                            </svg>
+                                            <svg class="card__star">
+                                                <use xlink:href="#star1"></use>
+                                            </svg>
+                                            <svg class="card__star">
+                                                <use xlink:href="#star0.5"></use>
+                                            </svg>
+                                            <svg class="card__star card__star--none">
+                                                <use xlink:href="#star0"></use>
+                                            </svg>
+                                        </div>
+                                        <p class="card__pos">12</p>
+                                    </div>
+                                    <div class="card__footer">
+                                        <p class="card__price">$ 384.4</p>
+                                        <button class="card__btn" type="button">
+                                            <svg class="card__icon-footer">
+                                                <use xlink:href="#cart2"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </div> <!-- /.card-elem-->
+                            </div> <!-- //card-elem-wrapper-->
+
+                            <div class="card__elem-wrapper active" data-popular>
+
+                                <div class="card__elem">
+
+                                    <div class="card__header">
+                                        <p class="card__sale">Sale 10%</p>
+                                        <div class="card__icons">
+                                            <button class="card__btn" type="button">
+                                               <svg class="card__icon-header">
+                                                    <use xlink:href="#menu2"></use>
+                                                </svg>
+                                            </button>
+                                            <button class="card__btn in-favourite" type="button">
+                                                <svg class="card__icon-header">
+                                                    <use xlink:href="#heart"></use>
+                                                </svg>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                    <a class="card__sell" href="#" target="_blank">
+                                        <img class="card__photo" src="assets/img/list/6.png">
+                                        <h3 class="card__text">Asus ZenFone Go ZB452KG (black and white)</h3>
+                                    </a>
+                                    <div class="card__rate">
+                                        <div class="card__stars">
+                                            <svg class="card__star">
+                                                <use xlink:href="#star1"></use>
+                                            </svg>
+                                            <svg class="card__star">
+                                                <use xlink:href="#star1"></use>
+                                            </svg>
+                                            <svg class="card__star">
+                                                <use xlink:href="#star1"></use>
+                                            </svg>
+                                            <svg class="card__star">
+                                                <use xlink:href="#star0.5"></use>
+                                            </svg>
+                                            <svg class="card__star card__star--none">
+                                                <use xlink:href="#star0"></use>
+                                            </svg>
+                                        </div>
+                                        <p class="card__pos">12</p>
+                                    </div>
+                                    <div class="card__footer">
+                                        <p class="card__price">$ 384.4</p>
+                                        <button class="card__btn" type="button">
+                                            <svg class="card__icon-footer">
+                                                <use xlink:href="#cart2"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </div> <!-- /.card-elem-->
+                            </div> <!-- //card-elem-wrapper-->
+
+                        </div>
+                </div>
+            </div>  <!-- /.main__content-->
+        </div>  <!-- /.main__inner-->
+
+    </div>  <!-- /.container-->
+</main> <!-- /.main-->
+
+<div class="footer">
+    <div class="footer-up">
+        <div class="footer__container footer__container--up">
+            <h1 class="footer-up__logo">Quantum</h1>
+            <ul class="footer-up__nav">
+                <li class="footer-up__li footer-up__li--nonref" id="footer-up__li--nonref">
+                    <p class="footer-up__text footer-up__text--nonref">Shop</p>
+                    <svg class="footer-up__arrow">
+                        <use xlink:href="#arrowDown"></use>
+                    </svg>
+                    <ul class="footer-up__subnav">
+                        <li class="footer-up__subli">
+                            <a class="footer-up__sublink" href="#">Shop 1</a>
+                        </li>
+                        <li class="footer-up__subli">
+                            <a class="footer-up__sublink" href="#">Shop 2</a>
+                        </li>
+                        <li class="footer-up__subli">
+                            <a class="footer-up__sublink" href="#">Shop 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-up__li">
+                    <a class="footer-up__text" href="#">Journal</a>
+                </li>
+                <li class="footer-up__li">
+                    <a class="footer-up__text" href="#">About</a>
+                </li>
+                <li class="footer-up__li">
+                    <a class="footer-up__text" href="#">Contacts</a>
+                </li>
+            </ul>
+            <nav class="footer-up__social">
+                <a class="footer-up__link" href="#" target="_blank">
+                    <svg class="footer-up__image">
+                        <use xlink:href="#facebook"></use>
+                    </svg>
+                </a>
+
+                <a class="footer-up__link" href="#" target="_blank">
+                    <svg class="footer-up__image">
+                        <use xlink:href="#twitter"></use>
+                    </svg>
+                </a>
+
+                <a class="footer-up__link" href="#" target="_blank">
+                    <svg class="footer-up__image">
+                        <use xlink:href="#instagram"></use>
+                    </svg>
+                </a>
+
+                <a class="footer-up__link" href="#" target="_blank">
+                    <svg class="footer-up__image">
+                        <use xlink:href="#youtube"></use>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <hr class="footer__hr">
+
+    <div class="footer-down">
+        <div class="footer__container">
+            <nav class="footer-down__nav">
+                <a class="footer-down__link" href=#>&copy; <time datetime="2016">2016</time>. Quantum UI kit</a>
+                <a class="footer-down__link" href=#>Privacy Policy</a>
+                <a class="footer-down__link" href=#>Terms of Use</a>
+            </nav>
+            <div class="footer-down__money">
+                <p class="footer-down__name">Accepted payment methods</p>
+                <div class="footer-down__pay">
+
+                    <a href="#" target="_blank"><img class="footer-down__card" src="assets/img/footer/visa.jpg" alt="card visa"></a>
+                    <a href="#" target="_blank"><img class="footer-down__card" src="assets/img/footer/master_card.jpg" alt="card mastercard"></a>
+                    <a href="#" target="_blank"><img class="footer-down__card" src="assets/img/footer/pay_pal.jpg" alt="card paypal"></a>
+                    <a href="#" target="_blank"><img class="footer-down__card" src="assets/img/footer/amazon.jpg" alt="card amazon"></a>
+                </div>
+            </div>
+
+        </div> <!-- /.footer__container-->
+    </div> <!-- /.footer__down-->
+</div> <!--/.footer-->
+
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
